@@ -66,7 +66,10 @@ public class HollywoodServiceBeInjectSimpleAgengFinderTest {
 	}
 
 	
-
+	/**
+	 * 获取多个友好星探的列表
+	 * @return
+	 */
 	private List<Agent> getMultiFriendlyAgentsList() {
 		// TODO Auto-generated method stub
 		List<Agent> agents = new ArrayList<Agent>();
