@@ -33,12 +33,18 @@ public class HollywoodServiceBeInjectSimpleAgengFinderTest {
 		hollywoodService.clearAllAgents();
 	}
 
+	/**
+	 * 测试没有友好星探的情况
+	 */
 	@Test(expected=NotFoundFriendlyAgentExcpetion.class)
 	public void emptyFriendlyAgents() {
 		initTestFriendlyAgents(getEmpyFriendlyAgentList());
 		hollywoodService.getFriendlyAgentsBy(deveplorer);	
 	}
 
+	/**
+	 * 测试有一位友好星探的情况
+	 */
 	@Test
 	public void OnlyOneFriendlyAgent() {
 		initTestFriendlyAgents(getContainsOnlyOneFriendlyAgentList());
@@ -47,6 +53,9 @@ public class HollywoodServiceBeInjectSimpleAgengFinderTest {
 		assertEquals(agents.get(0).getType(), deveplorer);
 	}
 
+	/**
+	 * 测试有多位星探的情况
+	 */
 	@Test
 	public void multiFriendlyAgents() {
 		initTestFriendlyAgents(getMultiFriendlyAgentsList());
