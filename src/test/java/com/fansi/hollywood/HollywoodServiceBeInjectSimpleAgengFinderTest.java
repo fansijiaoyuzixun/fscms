@@ -77,10 +77,6 @@ public class HollywoodServiceBeInjectSimpleAgengFinderTest {
 		return agents;
 	}
 	
-	/**
-	 * 设置多个友好星探实体集合
-	 * @param agents
-	 */
 	private void setMultiFriendlyAgentEntities(List<Agent> agents) {
 		for (int i = 0; i < MultiFriendlyAgentsNumber; i++) {
 			Agent a1 = new Agent();
