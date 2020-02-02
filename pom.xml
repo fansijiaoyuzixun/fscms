@@ -6,7 +6,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.fanzhi</groupId>
 	<artifactId>fansisys</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0.0</version>
+	<packaging>war</packaging>
 	<name>fansisys</name>
 	<description>My first crud project for Spring Boot</description>
 
